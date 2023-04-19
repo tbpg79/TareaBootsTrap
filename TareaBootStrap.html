@@ -39,7 +39,29 @@
                 <!--....................................................-->
         <h1 class="text-center mt-4">Comparacion de: <a href="#osi" style="text-decoration: none;">Modelo OSI</a> y <a href="#tcp"style="text-decoration: none;">TCP/IP</a></h1>
                 <!--....................................................-->
-        <div class="col-12 p-3 bg-danger text-center"id="osi">OSI</div>
+        <div class="col-12 p-3 bg-danger text-center"id="osi">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              OSI
+            </button>
+            <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modelo OSI</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    El <strong>Modelo OSI</strong> permite que distintos equipos con distintos sistemas se puedan comunicar
+                    entre sí
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
         <div class="row mt-2">
             <div class="col-12"><img src=".\Osi.png" class="w-100 img-fluid"margin="10px"></a></div>
             <div class="col-6 mt-2">Concepto:</div>
@@ -68,26 +90,42 @@
             </div>
         </div>
             <!--....................................................-->
-            <div class="col-12 p-3 bg-warning text-center mt-4"id="tcp">TCP/ip</div>
-
+                <div class="col-12 p-3 bg-warning text-center"id="tcp">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        TCP/IP
+                      </button>
+                      <div class="modal" id="ex" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="ex">TCP/IP</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Protocolo de enlace de datos que se usa en Internet para que los ordenadores y otros dispositivos envíen y reciban datos.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             <div class="row mt-2">
                 <div class="col-12"><img src=".\tcp.jpeg" class="w-50 img-fluid mx-auto d-block"margin="10px" po></a></div>
                 <div class="col-6 mt-2">Concepto:</div>
-                <div class="col-6 mt-2">OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse 
-                    entre sí.</div>
+                <div class="col-6 mt-2">Protocolo de enlace de datos que se usa en Internet para que los ordenadores y otros dispositivos envíen y reciban datos. .</div>
             </div>
             <div class="row mt-2">
                 <div class="col-6">Características:</div>
                 <div class="col-6">
                     <ul>
-                        <li>Físico: Define las características físicas de la red material.</li>
-                        <li>Gestiona las conexiones de red para las capas superiores.</li>
-                        <li>Enlace: Proporciona el servicio de envió de datos a través del enlace físico.
-    
-                        <li>Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</li>
-                        <li>Transporte: Proporciona servicios de detección y corrección de errores.</li>
-                        <li>Aplicación: Aplicaciones que usan la red</li>
-                        <li>Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones</li>
+                        <li>Es un protocolo que funciona mediante la conexión mutua entre cliente y servidor.</li>
+                        <li>Ordena los segmentos provenientes del protocolo IP.</li>
+                        <li>Monitorea el flujo de los datos y permite evitar la saturación de la red.</li>    
+                        <li>Entrega los datos al protocolo IP en forma de segmentos de longitud variable.</li>
+                        <li>Permite circular de forma simultánea a la información proveniente de diferentes fuentes.</li>
                     </ul>
                 </div>
             </div>
