@@ -1,0 +1,35 @@
+        <div class="row">
+          <div class="col text-center"><strong>MODELO OSI</strong>
+            <div class="row">
+              <div class="col bg-warning">Capas de HOST
+                <div class="row">Aplicación</div>
+                <div class="row"><div class="col">Presentación</div></div>
+                <div class="row"><div class="col">Sesión</div></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="col">Capas de Medios
+                <div class="row"><div class="col">Transporte</div></div>
+                <div class="row"><div class="col">Red</div></div>
+                <div class="row"><div class="col">Enlace de datos</div></div>
+                <div class="row"><div class="col">Física</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center"><strong>TCP/IP</strong>
+            <div class="row">
+              <div class="col">Modelo TCP/IP
+                <div class="row"><div class="col">Aplicación</div></div>
+                <div class="row"><div class="col">Transporte</div></div>
+                <div class="row"><div class="col">Internet</div></div>
+                <div class="row"><div class="col">Acceso a la red</div></div>
+              </div>
+              <div class="col">Conjunto del protocolo TCP/ip
+                <div class="row"><div class="col">HTTP,DNS,DHCP,FTP</div></div>
+                <div class="row"><div class="col">TCP,UDP</div></div>
+                <div class="row"><div class="col">IPv4,IPv6,ICMPv4,ICMPv6</div></div>
+                <div class="row"><div class="col">PPP,retransmisión de tramas, Ethernet</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
