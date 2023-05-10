@@ -8,6 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- CSS de Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Scripts de jQuery y Bootstrap 5 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
     <title>Modelo OSI o TCP/ip</title>
 </head>
 <body>
@@ -37,9 +43,7 @@
                 </div>
               </div>
         </nav>
-    </div>
     <!--....................................................-->
-    <div class="container ml-2">
       <!--....................................................-->
         <h1 class="text-center mt-4">Comparacion de: <a href="#osi" style="text-decoration: none;">Modelo OSI</a> y <a href="#tcp"style="text-decoration: none;">TCP/IP</a></h1>
                 <!--....................................................--> 
@@ -80,60 +84,65 @@
             </div></div>
         </div>
         <!--....................................................-->
-        <div class="container mt-4">
-        <div class="col-12 p-3 bg-danger text-center mt-2"id="osi" >
-                  <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
-            </button>
+      <div class="col-12 p-3 bg-danger text-center mt-2" id="osi">
+  <div class="d-flex align-items-center justify-content-center">
+    <h2 class="m-0">
+      Modelo OSI
+      <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-info-circle">ereerrtete</i>
+      </button>
+    </h2>
+  </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¿Qué es el modelo OSI?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="row mt-2">
-            <div class="col-12"><img src=".\Osi.png" class="w-100 img-fluid"margin="10px"></a></div>
-            <div class="col-6 mt-2">Concepto:</div>
-            <div class="col-6 mt-2">OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse 
-                entre sí.</div>
+        <div class="modal-body">
+          <p>El modelo OSI (Open Systems Interconnection) es un modelo de referencia para protocolos de comunicación de redes de computadoras.</p>
+          <p>Este modelo se divide en siete capas, cada una de las cuales representa un conjunto de funciones de comunicación específicas. Las capas del modelo OSI son:</p>
+          <ul>
+            <li>Física</li>
+            <li>Enlace de datos</li>
+            <li>Red</li>
+            <li>Transporte</li>
+            <li>Sesión</li>
+            <li>Presentación</li>
+            <li>Aplicación</li>
+          </ul>
         </div>
-        <div class="row mt-2">
-            <div class="col-6">Características:</div>
-            <div class="col-6">
-                <ul>
-                    <li id="fi">Físico: Define las características físicas de la red material.</li>
-                    <li id="re">Red: Gestiona las conexiones de red para las capas superiores.</li>
-                    <li id="enl">Enlace: Proporciona el servicio de envió de datos a través del enlace físico.</li>
-
-                    <li id="ses">Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</li>
-                    <li id="trans">Transporte: Proporciona servicios de detección y corrección de errores.</li>
-                    <li id="apl">Aplicación: Aplicaciones que usan la red</li>
-                    <li id="present">Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-6">Origen:</div>
-            <div class="col-6">El modelo OSI se creó para solucionar el problema de que las redes incompatibles
-                y no se comunicaban entre sí debido a distintos softwares y hardwares
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
+    </div>
+  </div>
+      </div>
+  <div class="row mt-2">
+    <div class="col-12">
+      <img src="./Osi.png" class="w-100 img-fluid" margin="10px">
+    </div>
+    <div class="col-6 mt-2">Concepto:</div>
+    <div class="col-6 mt-2">El modelo OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse entre sí.</div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-6">Características:</div>
+    <div class="col-6">
+      <ul>
+        <li id="fi">Físico: Define las características físicas de la red material.</li>
+        <li id="re">Red: Gestiona las conexiones de red para las capas superiores.</li>
+        <li id="enl">Enlace: Proporciona el servicio de envío de datos a través del enlace físico.</li>
+        <li id="ses">Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</li>
+        <li id="trans">Transporte: Proporciona servicios de detección y corrección de errores.</li>
+        <li id="apl">Aplicación: Aplicaciones que usan la red.</li>
+        <li id="present">Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones.</li>
+      </ul>
+   
+
 
             <!--....................................................-->
                 <div class="col-12 p-3 bg-warning text-center"id="tcp"><h2><strong>TCP/IP</strong></h2></div>
@@ -160,5 +169,8 @@
                      se convirtió en el más usado en redes y el protocolo estándar de internet.   
                 </div>
             </div>
+        </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
 </html>
