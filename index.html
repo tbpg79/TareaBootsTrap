@@ -26,7 +26,7 @@ background: linear-gradient(0deg, rgba(7,15,68,1) 18%, rgba(7,201,100,1) 81%);">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 20px;">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#"><h1><strong>Inicio</strong></h1></a>
                       </li>
@@ -101,127 +101,72 @@ background: linear-gradient(0deg, rgba(7,15,68,1) 18%, rgba(7,201,100,1) 81%);">
     </div>
     <br>
 <!-------------------------------->
-    <div style="padding-top: 50px;">
+    <div class="container" style="padding-top: 200px;padding-left: 20%;padding-bottom: 20%;">
         <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 24px;border-color: beige;position: absolute;">
-                  Modelo OSI
-                </button>
-            </div>
-                  <!-- The Modal -->
-                  <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">¿Que es el Modelo OSI</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <p>El modelo OSI (Open Systems Interconnection) es un modelo de referencia para protocolos de comunicación de redes de computadoras.</p>
-                    <p>Este modelo se divide en siete capas, cada una de las cuales representa un conjunto de funciones de comunicación específicas. Las capas del modelo OSI son:</p>
-                    <ul>
-                      <li>Física</li>
-                      <li>Enlace de datos</li>
-                      <li>Red</li>
-                      <li>Transporte</li>
-                      <li>Sesión</li>
-                      <li>Presentación</li>
-                      <li>Aplicación</li>
-                    </ul>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+                  <div class="col-10">
+                    <div style="padding-bottom: 10%;">
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 24px;border-color: beige;position: absolute;">
+                        Modelo OSI
+                      </button>
+                    </div>
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">¿Que es el Modelo OSI</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>El modelo OSI (Open Systems Interconnection) es un modelo de referencia para protocolos de comunicación de redes de computadoras.</p>
+                        <p>Este modelo se divide en siete capas, cada una de las cuales representa un conjunto de funciones de comunicación específicas. Las capas del modelo OSI son:</p>
+                        <ul>
+                          <li>Física</li>
+                          <li>Enlace de datos</li>
+                          <li>Red</li>
+                          <li>Transporte</li>
+                          <li>Sesión</li>
+                          <li>Presentación</li>
+                          <li>Aplicación</li>
+                        </ul>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col-4" style="color: white;font-size: 18px;padding-top: 20px;">
+              <h3 style="font-size: 25px;">Concepto:</h3><p>El modelo OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse entre sí.</p>
+             
               </div>
-            </div>
-        </div>
-        <div class="row mt-2" style="color: white;">
-            <div class="col-3" style="margin-top: 50px;">
-              <img src="./Osi.png" class="mx-auto d-block" margin="10px">
-            </div>
-            <div class="col-12 mt-2">Concepto:</div>
-            <div class="col-3 mt-2">El modelo OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse entre sí.</div>
-          </div>
-          <div class="row mt-2" style="color: white;">
-            <div class="row-6">Características:</div>
             <div class="col-6">
-              <ul>
-                <li id="fi">Físico: Define las características físicas de la red material.</li>
-                <li id="re">Red: Gestiona las conexiones de red para las capas superiores.</li>
-                <li id="enl">Enlace: Proporciona el servicio de envío de datos a través del enlace físico.</li>
-                <li id="ses">Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</li>
-                <li id="trans">Transporte: Proporciona servicios de detección y corrección de errores.</li>
-                <li id="apl">Aplicación: Aplicaciones que usan la red.</li>
-                <li id="present">Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones.</li>
-              </ul>
-            </div>        
-           </div>
-        </div>
-        <!---------------------------------------------------->
-    <div style="float:inherit">
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 24px;border-color: beige;position: absolute;">
-                  Modelo OSI
-                </button>
-            </div>
-                  <!-- The Modal -->
-                  <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">¿Que es el Modelo OSI</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <p>El modelo OSI (Open Systems Interconnection) es un modelo de referencia para protocolos de comunicación de redes de computadoras.</p>
-                    <p>Este modelo se divide en siete capas, cada una de las cuales representa un conjunto de funciones de comunicación específicas. Las capas del modelo OSI son:</p>
-                    <ul>
-                      <li>Física</li>
-                      <li>Enlace de datos</li>
-                      <li>Red</li>
-                      <li>Transporte</li>
-                      <li>Sesión</li>
-                      <li>Presentación</li>
-                      <li>Aplicación</li>
-                    </ul>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-              </div>
+                <img src="./Osi.png" class="container-fluid" margin="10px">
             </div>
         </div>
-        <div class="row mt-2" style="color: white;">
-            <div class="col-3" style="margin-top: 50px;">
-              <img src="./Osi.png" class="mx-auto d-block" margin="10px">
-            </div>
-            <div class="col-12 mt-2">Concepto:</div>
-            <div class="col-3 mt-2">El modelo OSI proporciona un estándar para que distintos sistemas de equipos puedan comunicarse entre sí.</div>
-          </div>
-          <div class="row mt-2" style="color: white;">
-            <div class="row-6">Características:</div>
-            <div class="col-6">
-              <ul>
-                <li id="fi">Físico: Define las características físicas de la red material.</li>
-                <li id="re">Red: Gestiona las conexiones de red para las capas superiores.</li>
-                <li id="enl">Enlace: Proporciona el servicio de envío de datos a través del enlace físico.</li>
-                <li id="ses">Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</li>
-                <li id="trans">Transporte: Proporciona servicios de detección y corrección de errores.</li>
-                <li id="apl">Aplicación: Aplicaciones que usan la red.</li>
-                <li id="present">Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones.</li>
-              </ul>
-            </div>        
-           </div>
-        </div>
-    <!------------------------------>
-
+    </div>
+     <div style="padding-left: 20px;padding-top: 25px; color: white;font-size: 15px;">
+       <h2>Características:</h2>
+       <br>
+         <p id="fi">Físico: Define las características físicas de la red material.</p>
+         <br>
+         <p id="re">Red: Gestiona las conexiones de red para las capas superiores.</p>
+         <br>
+         <p id="enl">Enlace: Proporciona el servicio de envío de datos a través del enlace físico.</p>
+         <br>
+         <p id="ses">Sesión: Gestiona las concesiones entre aplicaciones cooperativas.</p>
+         <br>
+         <p id="trans">Transporte: Proporciona servicios de detección y corrección de errores.</p>
+         <br>
+         <p id="apl">Aplicación: Aplicaciones que usan la red.</p>
+         <br>
+         <p id="present">Presentación: Estandariza la forma en la que se presentan los datos a las aplicaciones.</p> 
+     </div>
+    <!----Abajo final del div total-->
 </div>
 
 </body>
