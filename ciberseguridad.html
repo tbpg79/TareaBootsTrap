@@ -26,6 +26,14 @@
             color: white;
             text-decoration: none;
         }
+        a:link{
+            color: white;
+            text-decoration: none;
+        }
+        a:visited{
+            color: white;
+            text-decoration: none;
+        }
         a:hover {
             color: aqua;
         }
@@ -36,16 +44,31 @@
             font-size: 30px;
             font-weight: bold;
         }
+        h1{
+            font-size: 70px;
+            text-shadow: black 4px 2px 2px;
+        }
+        button{
+            background-color: black;
+            color: white;
+        }
+        nav{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body style="background-color: rgb(5, 5, 113); color: white; padding-bottom: 20px;">
     <div class="container"
         style="padding-top: 20px;padding-bottom: 10px; font-size: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <nav>
+            <a href="./index.html"><button>Inicio</button></a>
+            <a href="./modelo.html"><button>Comparación</button></a>
+        </nav>
         <div style="text-align: center;">
             <h1>CIBERSEGURIDAD</h1>
-            <h2>Información sobre ciberseguridad para la tarea de DAM: Sistemas Informáticos CIBERSEGURIDAD</h2>
-            <img src="./ciber.jpeg">
+            <h2 style="background-color: rgb(5, 5, 64);padding-bottom: 10px;padding-top: 10px;">Información sobre ciberseguridad para la tarea de DAM: Sistemas Informáticos CIBERSEGURIDAD</h2>
+            <img src="./ciber.jpeg" style="padding-top: 10px; padding-bottom: 10px;">
         </div>
         <div class="container-fluid">
             <ul>
@@ -99,7 +122,7 @@
             </ul>
         </div>
         <div class="container">
-            <h3>Ejemplos de principales tipos de ciberdelincuencia.
+            <h3 id="a1">Ejemplos de principales tipos de ciberdelincuencia.
             </h3>
             <p>
             <ul>
@@ -117,57 +140,58 @@
             </ul>
             </p>
             <hr>
-            <h3>Motivos del aumento de los ciberdelitos.
+            <h3 id="a2">Motivos del aumento de los ciberdelitos.
             </h3>
             <p>Uno de los principales motivos es el aumento de las tecnologías ya que se al encontrarse
                 al alcance de todos.
             </p>
             <hr>
-            <h3>Quiénes suelen ser los ciberdelincuentes.
+            <h3 id="a3">Quiénes suelen ser los ciberdelincuentes.
             </h3>
             <p>Hackers, asesiones, estudiantes, profesores, cualquier persona puede ser un ciberdelincuente.</p>
             <hr>
-            <h3>Cómo se les captura.
+            <h3 id="a4">Cómo se les captura.
             </h3>
             <p>Según el rastro que van dejando ya que no todos son unos profesionales.</p>
             <hr>
-            <h3>Motivaciones de los ciberdelincuentes.
+            <h3 id="a5">Motivaciones de los ciberdelincuentes.
             </h3>
             <p>Económico, Ideológico, Robo de información, entre otros.
             </p>
             <hr>
-            <h3>Qué es la DeepWeb, y cuales son sus diferencias respecto a la DarkWeb.
+            <h3 id="a6">Qué es la DeepWeb, y cuales son sus diferencias respecto a la DarkWeb.
             </h3>
             <p>La Deep Web son los contenidos de internet que no están indexados, y son la mayoría. Darknet es una red
                 cifrada*, para acceder a la cual requieres herramientas y conocimientos específicos. Por último,
                 la Dark Web son los sitios alojados en la Darknet.</p>
             <hr>
-            <h3>Qué capas del modelo OSI son implementadas por el sistema operativo (software) y cuáles están
+            <h3 id="a7">Qué capas del modelo OSI son implementadas por el sistema operativo (software) y cuáles están
                 implementadas por hardware.
             </h3>
             <p>Aplicación, Presentación, Sesión, Transporte, Red,Enlace de datos y Física </p>
             <hr>
-            <h3>Describe qué es y cómo se utiliza NMap.
+            <h3 id="a8">Describe qué es y cómo se utiliza NMap.
             </h3>
             <p>Nmap es un software de código abierto que se utiliza para escanear una red y sus puertos con el objetivo
                 de obtener información importante sobre la misma para controlar y gestionar su seguridad. Es una
                 aplicación que se utiliza normalmente
                 para realizar auditorías de seguridad y monitoreo de redes.</p>
+                <img src="/nmap.png">
             <hr>
-            <h3>Describe qué es y cómo funciona el escaneo ARP.
+            <h3 id="a9">Describe qué es y cómo funciona el escaneo ARP.
             </h3>
             <p>El protocolo ARP (Address Resolution Protocol) o el Protocolo de Resolución de Direcciones es el
                 encargado de establecer una correspondencia entre la dirección IP y la dirección MAC. Se trata de un
                 protocolo estándar específico de redes
                 que da la posibilidad de transmitir ciertos datos mediante un paquete.</p>
             <hr>
-            <h3>Describe en qué consiste el escaneo de puertos.
+            <h3 id="a10">Describe en qué consiste el escaneo de puertos.
             </h3>
             <p>El análisis de puertos se utiliza para comprobar qué puertos de la red están abiertos y pueden recibir o
                 enviar datos. También se utiliza para enviar paquetes a puertos concretos de un anfitrión y analizar
                 respuestas para identificar vulnerabilidades.</p>
             <hr>
-            <h3>Describe cómo funciona el escaneo de puertos TCP.
+            <h3 id="a11">Describe cómo funciona el escaneo de puertos TCP.
             </h3>
             <p>El método más común de escaneo TCP, es el escaneo SYN. Esto implica crear una conexión parcial al host en
                 el puerto de destino por medio de un paquete SYN y luego evaluando la respuesta del host. Si el paquete
@@ -175,14 +199,17 @@
                 un paquete SYN/ACK si el puerto está abierto, de lo contrario
                 enviará un paquete RST.</p>
             <hr>
-            <h3>Describe cómo funciona el escaneo de puertos UDP.
+            <h3 id="a12">Describe cómo funciona el escaneo de puertos UDP.
             </h3>
             <p>Envían un paquete UDP a varios puertos en el host de destino y evalúan los paquetes de respuesta para
                 determinar la disponibilidad del servicio en el host al igual que con los escaneos TCP, recibir un
                 paquete
                 de respuesta indica que el puerto está abierto.</p>
             <hr>
-            <h3>Describe los principales tipos de ataques de red.
+            <p>TCP/UDP</p>
+            <img src="./tcpudp.png" width="700px">
+            <hr>
+            <h3 id="a13">Describe los principales tipos de ataques de red.
             </h3>
             <p>Estos ataques de red se pueden clasificar en:
             <p>Ataques de reconocimiento:
@@ -205,28 +232,28 @@
             </p>
             </p>
             <hr>
-            <h3>¿Qué son las vulnerabilidades IDOR?
+            <h3 id="a14">¿Qué son las vulnerabilidades IDOR?
             </h3>
             <p>La vulnerabilidad de Insecure Direct Object References o IDOR es un fallo relacionado con la autorización
                 de los clientes, ya que estos no deberían poder acceder a las facturas de los demás. Para evitar este
                 fallo, es necesario limitar al máximo
                 los permisos de acceso que tengan los usuarios de la aplicación.</p>
             <hr>
-            <h3>¿En qué consiste el SQL injection?
+            <h3 id="a15">¿En qué consiste el SQL injection?
             </h3>
             <p>Una inyección de SQL, a veces abreviada como SQLi, es un tipo de vulnerabilidad en la que un atacante usa
                 un trozo de código SQL (lenguaje de consulta estructurado) para manipular una base de datos y acceder a
                 información potencialmente valiosa.
             </p>
             <hr>
-            <h3>¿En qué consiste el ataque XSS?
+            <h3 id="a16">¿En qué consiste el ataque XSS?
             </h3>
             <p>Cross-site scripting (XSS) es una vulnerabilidad de seguridad que permite a un atacante inyectar en un
                 sitio web código malicioso del lado del cliente. Este código es ejecutado por las víctimas y permite a
                 los atacante eludir los controles de acceso y hacerse pasar por usuarios.
             </p>
             <hr>
-            <h3>¿Cómo se puede proteger una red wifi?
+            <h3 id="a17">¿Cómo se puede proteger una red wifi?
             </h3>
             <p>
             <ul>
@@ -243,7 +270,7 @@
             </ul>
             </p>
             <hr>
-            <h3>¿Cómo realizan hacks por ingeniería social?
+            <h3 id="a18">¿Cómo realizan hacks por ingeniería social?
             </h3>
             <p>La ingeniería social es el arte de manipular a las personas para que entreguen información confidencial.
                 El tipo de información que buscan estos delincuentes puede variar, pero cuando se trata de individuos,
@@ -252,7 +279,7 @@
                 contraseñas e información bancaria, además de darles el control de su ordenador.
             </p>
             <hr>
-            <h3>¿En qué consiste la autenticación multifactor?
+            <h3 id="a19">¿En qué consiste la autenticación multifactor?
             </h3>
             <p>La autenticación multifactor (MFA) agrega una capa de protección al proceso de inicio de sesión. Cuando
                 se accede a una cuenta o aplicación, los usuarios deben pasar por una verificación de identidad
@@ -260,14 +287,14 @@
                 teléfono.
             </p>
             <hr>
-            <h3>¿Qué es el Credential Stuffing?
+            <h3 id="a20">¿Qué es el Credential Stuffing?
             </h3>
             <p>tipo de amenaza que busca robar nuestras credenciales y contraseñas al aprovecharse principalmente de
                 vulnerabilidades en bases de datos. Los piratas informáticos explotan bases de datos donde están
                 almacenadas nuestras credenciales y contraseñas.
             </p>
             <hr>
-            <h3>¿Qué se entiende por Security Operations Center?
+            <h3 id="a21">¿Qué se entiende por Security Operations Center?
             </h3>
             <p>El Centro de Operaciones de Seguridad, SOC, se refiere al equipo responsable de garantizar la seguridad
                 de la información. El SOC es una plataforma que permite la supervisión y administración de la seguridad
@@ -275,7 +302,7 @@
                 remota.
             </p>
             <hr>
-            <h3>¿Qué se considera en ciberseguridad un incidente y qué es el IRT (Incidence Response Team)?
+            <h3 id="a22">¿Qué se considera en ciberseguridad un incidente y qué es el IRT (Incidence Response Team)?
             </h3>
             <p>Un incidente de seguridad en informática es la ocurrencia de uno o varios eventos que atentan contra la
                 confidencialidad, la integridad y la disponibilidad de la información y que violan la Política de
